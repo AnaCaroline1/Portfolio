@@ -1,0 +1,490 @@
+/* Configuração básica */
+* {
+    font-family: 'Raleway';
+    font-size: 100%;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+/* Fim da configuração básica */
+
+/* Começo da Header */
+header{
+    background-color: #b8b8b8;
+    position: fixed;
+    width: 100%;
+    height: 5em;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.container{
+    position: relative;
+    padding: 1.5em;
+}
+.simbolo {
+    position:fixed;
+    width: 24px;
+    height: 24px;
+    top: 1px;
+    left: 2em;
+    margin-top: 2em;
+    padding-bottom: 0.2em;
+}
+
+.top-nome{
+    position:fixed;
+    align-items: center;
+    width: 102px;
+    height: 19px;
+    top: 1.2em;
+    left: 2em;
+
+    display: inline;
+    margin: 15px 0 0 32px;
+
+    color: rgb(82, 80, 80);
+    font-family: 'Raleway';
+    font-weight: 700;    
+    font-size: 16px;
+    line-height: 18.78px;    
+}
+.top-nome:hover{
+    transition: 1s;
+    color: rgb(253, 253, 253);
+}
+
+.nav-header {
+    position:fixed;
+    align-items: center;
+    top: 2em;
+    left: 30em;
+}
+
+.nav-header a {
+    display: inline;
+    margin: 0 0 0 20px;
+
+    width: 67px;
+    height: 19px;
+    
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+.nav-header a:hover{
+    transition: 0.4s;
+
+    color: #7a7777;
+    border-bottom: 4px solid rgb(196, 160, 3);
+}
+/* Fim da header */
+
+/* Início da pagina */
+
+.main{
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: auto 20px;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 109px;
+
+    padding-top: 5em;
+    margin:0 2em 0 2em;
+}
+
+.inicio img {
+    width:20%;
+    height:10%;
+    border: 1.5px solid darkgray;
+    border-radius:100%;
+}
+
+.titulo{
+    color: rgb(79, 85, 85);
+    font-size: 2em;
+    font-weight: bold;
+}
+.apresentar{
+    position: absolute;
+    margin:auto 3.5em;
+    padding: 2em;
+    
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5em;  
+}
+.linkedin {
+    color: rgb(79, 85, 85);
+    font-size: large;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.linkedin::after{
+    content: url("/imagens/seta.png");
+    padding-left:0.5em;
+}
+.linkedin:hover{
+    transition: 0.1s;
+    color: #464646;
+    font-weight: 500;
+    border-bottom: 4px solid rgb(196, 160, 3);
+}
+.github {
+    color: rgb(79, 85, 85);
+    font-size: large;
+    text-decoration: none;
+    
+}
+.github::after{
+    content: url("/imagens/seta.png");
+    padding-left:0.5em;
+}
+.github:hover{
+    transition: 0.1s;
+    color: #464646;
+    font-weight: 500;
+    border-bottom: 4px solid rgb(196, 160, 3);
+}
+.sobre{
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+    margin-top:10em;
+    
+    background-color: #EAF2FD;    
+}
+.titulo-sobre{
+    color: rgb(79, 85, 85);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1.5em 1.5em 0 1.5em;
+}
+.info-sobre{
+    padding: 0 2em 1.5em 2em;
+    line-height: 1.5;
+}
+/* Inicio das Sections (Skill's, Hobbies, Formaçao) */
+
+.soft-skill, .hobbies{
+	padding: 2em;
+}
+.titulo-skills, .titulo-hobbies, .titulo-formacao{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: rgb(79, 85, 85);
+    font-size: 2em;
+    font-weight: bold;
+}
+.ul-soft-skill, .ul-hobbies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap:25px;
+
+}
+
+.ul-soft-skill li, .ul-hobbies li{
+    width:15%;
+    height:20%;
+    margin-top: 2em;
+	background: #ffffff;
+    border-radius: 1em;
+}
+.image{
+    width: 10%;
+    height: 10%;
+    padding: 2em 2em 1.5em 2em;
+}
+
+.info-skill {
+    color: #464646;
+    font-weight: 700;
+    text-transform: Uppercase;
+
+    margin: 1.2em;
+    padding: 0 2em 1em 2em;
+}
+
+.info-hobby{
+
+    color: #464646;
+    font-weight: 700;
+    text-transform: Uppercase;
+    margin:1.1em;
+    padding: 0 2em 0.2em 1em;
+}
+/* Fim das Sections Skill's e Hobbies */
+
+/* Começo da Section Formação */
+.fomacao{
+    background: #EAF2FD;
+    padding: 2em;
+}
+.ul-formacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+.ul-formacao li{
+    width:20%;
+    height:20%;
+    margin-top: 2em;
+	background: #ffffff;
+    border-radius: 1em;
+}
+.image-forma{
+    width: 50%;
+    height: 20%;
+    padding: 2em 2em 1.5em 2em;
+}
+.info-formacao{
+    color: #464646;
+    font-weight: 700;
+    text-transform: Uppercase;
+    margin:1.1em;
+    padding: 0 2em 0.2em 1em;
+}
+.sub-formacao{
+    color: #464646;
+    font-size: 12px;
+    margin:1.1em;
+    padding: 0 2em 0.2em 3em;
+}
+/* Fim da Section Formação */
+
+/* Começo da Section Experiência Profissional */
+.exp-profissao{
+    padding: 2em;
+}
+.titulo-profissao{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: rgb(79, 85, 85);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 2em;
+}
+.ul-profissao{
+    margin: auto;
+    padding: auto;
+}
+.encript{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+.jogo{
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-around;
+}
+.project{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2em;
+
+}
+.project-button{
+    width: 15%;
+    height: 15%;
+    align-items: center;
+    margin:16em 1em 0 0.5em;
+    padding: 1em;
+}
+.title-encrtp{
+    color: rgb(79, 85, 85);
+    position: absolute;
+    align-self: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 2em 4em 19.5em;
+}
+.title-jog{
+    color: rgb(79, 85, 85);
+    position: absolute;
+    align-self: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin:0 20em 5em 1em;
+}
+.sub-tit-encrtp{
+    color: rgb(79, 85, 85);
+
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    width: 25%;
+    margin: 12em 1em 0 2em;
+}
+.sub-tit-jog{
+    color: rgb(79, 85, 85);
+    position: absolute;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    width: 25%;    
+    margin: 12em 55em 0 1em;
+     
+
+}
+#btn-style-d{
+    border:3px solid #2A7AE4;
+}
+#btn-style-r{
+    background-color: #2A7AE4;
+    border: 3px solid #dad5d5;
+}
+.demo{
+    color: #2A7AE4;
+    font-weight: 700;
+    text-decoration: none; 
+}
+.rept{
+
+    color: #fdfdfd;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Fim da Section E.P */
+/* Começo do formulário */
+.formulario{
+
+    background-color: #EAF2FD;
+    display: inline-flex;
+
+}
+.form-img{
+    width: 30%;
+    margin:2.5em;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap:0.5em;
+    margin: 0 2em 2em 2em;
+
+}
+.title-form{
+    color: rgb(79, 85, 85);
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.sub-form{
+    color: rgb(79, 85, 85);
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.label{
+    color: rgb(79, 85, 85);
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.email-la{
+    color: rgb(79, 85, 85);
+    font-size: 200;
+    margin-top: 1em;
+
+}
+.email{
+    background-color: #ffffff;
+    color: rgb(79, 85, 85);
+    height: 10%;
+    margin-left: 2em;
+    margin-bottom:1em;
+    padding: 1em;
+    border: none;
+}
+.email:focus{
+    transition: 0.5s;
+    border-bottom: 4px solid #2A7AE4;
+}
+.mensagem{
+    border:none;
+    color: rgb(79, 85, 85);
+    height:20%;
+    margin: 0 0 0 2em;
+    padding: 2em;
+    box-sizing: border-box;
+
+}
+.mensagem:focus{
+    transition: 0.5s;
+    border-bottom: 4px solid #2A7AE4;
+}
+.enviar{
+    width: 25%;
+    height: 30%;
+    background: #2A7AE4;
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 2em;
+    align-self: center;
+
+    color: rgb(247, 247, 247);
+    font-weight: bold;
+    padding: 0.5em;
+    
+}
+.enviar:hover{
+    background: #4894f7;
+}
+
+/* Fim do Formulário */
+
+/* Fim da pagina */
+
+/* Rodapé da página */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.dev{
+    top:2em;
+    text-align:center;
+    padding: 40px 0;
+
+}
